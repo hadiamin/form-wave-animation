@@ -77,6 +77,35 @@ body {
 .form-control input:focus,
 .form-control input:valid {
   outline: none;
+  border-bottom-color: lightblue;
+}
+
+.form-control label {
+  /* Positioning */
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  /* Box Model */
+  display: inline-block;
+  min-width: 5px;
+
+  /* Typography */
+  font-size: 18px;
+
+  /* Misc */
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.264, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  /* Typography */
+  color: lightblue;
+
+  /* Misc */
+  transform: translateY(-30px);
 }
 
 .btn {
