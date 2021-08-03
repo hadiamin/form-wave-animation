@@ -96,7 +96,7 @@ body {
   font-size: 18px;
 
   /* Misc */
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.264, 1.55);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.264, 1.55);
 }
 
 .form-control input:focus + label span,
